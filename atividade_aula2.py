@@ -3,9 +3,9 @@
 numero_digitado = int(input('Digite um número: '))
 
 if numero_digitado % 2 == 0:
-  print('O número é par')
+  print(f'O número {numero_digitado} é par')
 else: 
-  print('O número é impar')
+  print(f'O número {numero_digitado} é impar')
 
 # match numero_digitado % 2:
 #   case 0:
