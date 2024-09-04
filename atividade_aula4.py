@@ -58,11 +58,17 @@ linha()
 print('5 - Escreva um código que conte a frequência de cada palavra em uma frase utilizando um dicionário.')
 linha()
 frase = "Python é uma linguagem de programação muito fácil fácil de aprender e usar"
+# palavras = frase.split()
+# dicionario_palavras = {}
+# for palavra in palavras:
+#   if palavra in dicionario_palavras:
+#     dicionario_palavras[palavra] += 1
+#   else:
+#     dicionario_palavras[palavra] = 1
+# print(dicionario_palavras)
+
+contagem_palavras = {}
 palavras = frase.split()
-dicionario_palavras = {}
 for palavra in palavras:
-  if palavra in dicionario_palavras:
-    dicionario_palavras[palavra] += 1
-  else:
-    dicionario_palavras[palavra] = 1
-print(dicionario_palavras)
+    contagem_palavras[palavra] = contagem_palavras.get(palavra, 0) + 1
+print(contagem_palavras)
